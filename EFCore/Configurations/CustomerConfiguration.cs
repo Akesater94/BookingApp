@@ -12,7 +12,7 @@ internal class CustomerConfiguration : IEntityTypeConfiguration<Customer>
     public void Configure(EntityTypeBuilder<Customer> builder)
     {
         builder.HasData(
-            new Customer { Id = 1, Name = "Tofta plåt och ventilation" },
+            new Customer { Id = 1, Name = "Tofta plåt och ventilation"},
             new Customer { Id = 2, Name = "PEAB"},
             new Customer { Id = 3, Name = "Assemblin"}
         );

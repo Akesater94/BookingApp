@@ -12,6 +12,5 @@ public class Lift
     public int Height { get; set; }
     public string Engine { get; set; } = null!;
     public int PlaformCapacityKg { get; set; }
-    public bool Booked { get; set; }
-    public ICollection<Customer> Customers { get; set; } = null!;
+    public ICollection<Booking> Bookings { get; set; } = new List<Booking>();
 }

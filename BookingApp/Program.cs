@@ -1,9 +1,16 @@
-﻿namespace BookingApp;
+﻿using System.Globalization;
+
+namespace BookingApp;
 
 internal class Program
 {
-    static void Main(string[] args)
+    public async static Task Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var cultureInfo = new CultureInfo("sv-SE");
+        CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
+        CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
+
+        App app = new App();
+        await app.Run();
     }
 }
